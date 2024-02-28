@@ -1,0 +1,131 @@
+/*
+  HACKS CSS (esqueleto)
+  Developer: Shelley Macedo (shelley.macedo@hotmail.com | atendimento@devshell.com.br)
+  Version: 1.0 -> 12, Jan 2015
+*/
+
+/* IE */
+.banner-principal, .banner-meio { justify-content:flex-start\0/; }
+
+@supports (-ms-ime-align:auto) {
+
+}
+
+
+/* Mozilla */
+@-moz-document url-prefix() {
+  .form-control[required] { box-shadow: none; }
+  .banner-principal, .banner-meio { justify-content:flex-start; }
+}
+
+
+/* Media */
+@media screen and (min-width:1441px) {
+  .imagem-principal { width: 340px; height: 340px; display: table; margin: 0 auto 3rem; }
+}
+
+@media screen and (max-width:1440px) {
+
+}
+
+@media screen and (max-width:1200px) {
+
+}
+
+@media screen and (max-width:1024px) {
+
+}
+
+@media screen and (max-width:991px) {
+
+}
+
+@media screen and (min-width:768px) {
+
+}
+
+@media screen and (max-width:767px) {
+  .container { max-width: 100%; }
+  #wrapper { padding-left: 0; }
+  .menu-fixo .fixo-interno { width: 100%; height: 50px; }
+  .banner-principal .titulo h2 { font-size: 32px; color: #ffbc00; font-weight: 600; }
+  .banner-principal .active { width: 100%; left: 0; }
+  .banner-principal .texto-animado { white-space: normal; left: 10px; right: 10px; width: 80%; line-height: 1; margin: auto; }
+  .banner-principal .texto-animado p { font-size: 20px; line-height: 24px; margin: auto; }
+  .imagem-principal { width: 180px; height: 180px; display: table; margin: 4rem auto 1rem; }
+  .navbar-toggle { width: 60px; height: 50px; }
+  .banner-principal .ancora { left: calc(50% - 10px); }
+  .hamburger { width: 60px; height: 50px; }
+  .hamburger.is-open .hamb-top, .hamburger.is-open .hamb-middle, .hamburger.is-open .hamb-bottom { width: 40px; left: 11px; }
+  .hamburger.is-open .hamb-top { top: 11px; }
+  .hamburger.is-open .hamb-middle { top: 23px; }
+  .menu-fixo .logo { width: 70px; height: 50px; line-height: 50px; background-size: contain; }
+  .menu-fixo .redes-laterais { top: 0; left: calc(50% - 80px); width: 180px; height: 50px; transform: translate(0%, 0%); }
+  .menu-fixo .redes-laterais ul li { transform: rotate(0deg); width: 20%; float: left; }
+  .hamburger.is-open .hamb-bottom { top: 35px; }
+  .hamburger.is-closed .hamb-top, .hamburger.is-closed .hamb-middle, .hamburger.is-closed .hamb-bottom { left: 10px; width: 40px; }
+  .hamburger.is-closed .hamb-top { top: 20px; }
+  .hamburger.is-closed .hamb-bottom { bottom: 27px; }
+  .titulo-destaque { margin-bottom: 2rem; }
+  .figura-destaque { max-width: 90%; margin: 0 auto 2rem; } 
+  .texto-col2 { column-count: 1; -webkit-column-count: 1; -moz-column-count: 1; -ms-column-count: 1; -o-column-count: 1; }
+  .botoes-contato a { width: 100%; text-align: center; }
+  section { margin-bottom: 1rem; }
+  .titulo-secundario { width: 100%; margin-bottom: 2rem; }
+  .btn-padrao { padding: 0.8571rem 1.5rem; }
+  h3 { font-size: 3rem; }
+  .iguala-blocos { column-count: 1; }
+  .projetosFilter li { padding: 0; }
+  .projetosContainer .isotope-item { margin: 2%; width: 96%; min-height: 300px; }
+  .depoimento .dados-depoimentos { min-height: 310px; }
+  .depoimento .dados-depoimentos .q-right { margin-right: -1rem; margin-left: 1rem; }  
+  .owl-next { right: 15px; position: absolute; bottom: 25px; }
+  .dados-contato { text-align: center }
+  .copy, .by { text-align: center; display: table!important; margin: auto!important; margin-bottom: 20px; float: none!important; }
+  .form { width: 90%; margin: 12%; padding: 0; }
+  .w-100, .w-50 { padding: 0; width:100%!important; margin-bottom:1rem; }
+  .label-float input, .label-float textarea { min-width:96%; }
+  .label-float label { top: calc(50% - 20px); }
+  .label-float input:focus + label, .label-float textarea:focus + label, .label-float input:not(:placeholder-shown) + label, .label-float textarea:not(:placeholder-shown) + label { top: -15px; }
+  .btn-padrao.right { float: none; margin: 0 8%; display: table; }
+  #wrapper.toggled { padding-left: 220px; }
+  #wrapper.toggled #sidebar-wrapper { width: 220px; }
+  #wrapper.toggled #sidebar-wrapper .logo { height:90px; }
+  body#wrapper.toggled .fixo-interno:before { position: fixed; width: 100vw; background-color: rgba(0, 0, 0, 0.78); }
+  .toggled .indexcity { left: 220px!important; width: 140px; }
+  .toggled .banner-principal .titulo h2 { font-size: 28px; }
+}
+
+@media screen and (min-width:681px) { 
+  .hidden-sm-up { display: none  }
+  .hidden-sm-down { display: block  }
+}
+
+@media screen and (max-width:680px) {
+  .hidden-sm-down { display: none }
+  .hidden-sm-up { display: block  }
+}
+
+@media screen and (max-width:600px) {
+
+}
+
+@media screen and (max-width:480px) {
+
+}
+
+@media screen and (max-width:420px) {
+
+}
+
+@media screen and (max-width:380px) {
+
+}
+
+@media screen and (max-width:320px) {
+
+}
+
+.projetosFilter li {
+  padding: 1rem 0.85rem;
+} 

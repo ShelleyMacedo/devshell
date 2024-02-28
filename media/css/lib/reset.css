@@ -1,0 +1,119 @@
+/*
+  * RESET CSS
+	Developer: Shelley Macedo (shelley.macedo@hotmail.com | atendimento@devshell.com.br)
+	Version: 1.0 -> 12, Jan 2015
+  *
+*/
+
+/* Remove espaçamentos, bordas, ajusta fontes e alinha todos os elementos igualmente na página */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin:0; padding:0; border:0; outline:0;}
+
+/* Define fonte padrão como "sem-serifa", remove barras de rolagem e evita com que as fontes fiquem serrilhadas ou distorcidas nos navegadores */
+html { font-family:sans-serif; -ms-text-size-adjust:none; -webkit-text-size-adjust:none; -webkit-font-smoothing:antialiased; /*overflow: hidden!important;*/ }
+
+/* Remove as margens de todos os elementos, iguala espaçamento de linhas e remove a rolagem horizontal do site (principalmente usado para dispositivos móveis) */
+* { margin:0; padding:0; }
+body { margin:0; overflow-x:hidden!important; min-height:100%; line-height:1; }
+
+/* Ajusta altura do site como 100% para todos os navegadores. Isto evita que páginas quebrem ou fiquem com rolagem desnecessária * /
+html, body { height:100%; }
+
+/* Define display padrão como "block" (estático é o correto) para elementos HTML5 (não é definido no IE 8/9/10/11) e Firefox */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display:block; }
+
+/* Define display padrão como "inline-block" (estático alinhado em linha é o correto e não é definido no IE 8/9) */
+audio, canvas, progress, video { display:inline-block; vertical-align: baseline; }
+
+/* Mantém as definições padrão para "controles" de áudio (oculta) e remove a altura em excesso em dispositivos IOS 5 */
+audio:not([controls]) { display:none; height:0; }
+
+/* Remove todos os estilos presentes em listas */
+ul, ol, dl, nav, li { list-style:none; }
+
+/* Define estilo padrão de citações no texto (remove caracteres especiais ao movimentar o mouse) */
+blockquote, q { quotes:none; }
+blockquote:before, blockquote:after, q:before, q:after { content:''; content:none; }
+cite { font-style:italic; }
+
+/* Remove a cor de fundo de links ativos (presentes pricipalmente no IE) */
+a { background-color:transparent; }
+
+/* Remove espaçamentos e "efeitos" causados ao passar o mouse em alguns elementos */
+:active, :hover, :focus { outline:none; }
+
+/* Força negrito em Firefox 4+, Safari e Chrome */
+b, strong { font-weight:bold; }
+
+/* Adiciona espaçamento padrão em parágrafos */
+p { margin:0 0 1em }
+
+/* Estilo padrão para explicação (tap) de palavras abreviadas */
+abbr[title] { border-bottom:1px dotted; }
+
+/* Estilo base para Títulos H1 (este é variável no Firefox 4+, Safari e Chrome, quando não definido) */
+h1 { font-size:2em; margin:0.67em 0; }
+
+/* Estiliza marcações de texto no estilo "marca-texto" */
+mark { background:#ff0; color:#000; }
+
+/* Estiliza texto menores (usados para explicação de termos) no parágrafo */
+small { font-size:80%; }
+
+/* Estiliza comportamento de textos subscritos e sobscritos no navegador */
+sub, sup { font-size:75%; line-height:0; position:relative; vertical-align:baseline; }
+sup { top:-0.5em; }
+sub { bottom:-0.25em; }
+
+/* Remove borda, efeitos e espaçamento de imagens */
+img { border:0; outline:none; padding:0; }
+
+/* Estiliza figuras (divs específicas para imagens) no site */
+figure { margin:1em 40px; }
+figcaption, legend { text-align:center; font-size:1em; display:block; font-style:italic; }
+
+/* Estilo padrão para linhas */
+hr { -moz-box-sizing:content-box; box-sizing:content-box; height:1px; border:none; background-color:#CCC; display:block; margin:10px auto; width:98%; }
+
+/* Estilização para textos "pré-formatados" (deixa o estilo parecido com 'bloco de notas' e mantém formatação idêntica ao que estiver na tag <pre>. Não necessita quebra de linhas e estilizações básicas não fazem efeito) */
+pre { overflow:auto; }
+code, kbd, pre, samp { font-family:monospace, monospace;font-size: 1em; }
+
+/* Estilização padrão para formulários e componentes em todos os navegadores */
+form { display:inline; }
+button, input, optgroup, select, textarea { color:inherit; font:inherit; margin:0; } /* optgroup aninha elementos dentro de um mesmo option do select */
+button { overflow:visible; }
+button, select { text-transform:none; }
+optgroup { font-weight:bold; }
+
+/* Recria controladores do tipo "áudio" e "vídeo" (desabilitados por padrão em mobile) e habilita corretamente áreas clicáveis no Android 4.0 e iOS */
+button, html input[type="button"], input[type="reset"], input[type="submit"] { -webkit-appearance:button; cursor:pointer; }
+
+/* Reseta cursor padrão em elementos desabilitados */
+button[disabled], html input[disabled] { cursor:default; }
+
+/* Remove espaçamento interno e borda de elementos no Firefox 4+. Reseta espaçamento de linhas (requerem "!important" por padrão) em campos "input" no Firefox4+ */
+button::-moz-focus-inner, input::-moz-focus-inner { border:0; padding:0; }
+input { line-height:normal; }
+
+/* Adiciona tamanho padrão em elemento "content-box" no IE 8/9/10 e Remove espaçamento em excesso de elementos */
+input[type="checkbox"], input[type="radio"] { box-sizing:border-box; padding:0; }
+
+/* Estiliza botões de incremento e decremento com altura padrão para alguns navegadores */
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button { height:auto; }
+
+/* Estiliza campo de busca no Safari, Firefox e Chrome. Remove espaçamento de botões internos do campo de busca. */
+input[type="search"] { -webkit-appearance:textfield; -moz-box-sizing:content-box; -webkit-box-sizing:content-box; box-sizing:content-box; }
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration { -webkit-appearance:none; }
+
+/* Estiliza blocos fieldset */
+fieldset { border:1px solid #c0c0c0; margin:0 2px; padding:0.35em 0.625em 0.75em; }
+
+/* Padroniza elementos "legenda" nos navegadores IE 8/9/10/11 */
+legend { border:0; padding:0; }
+
+/* Remove barra de rolagem padrão em textareas (IE 8/9/10/11) */
+textarea { overflow:auto; }
+
+/* Remove espaçamento padrão de tabelas e elementos internos */
+table { border-collapse:collapse; border-spacing:0; }
+td, th { padding:0; }
