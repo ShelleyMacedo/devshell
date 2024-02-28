@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no">
+    <meta name="author" content="Shelley Macedo - Desenvolvimento Front-End" />
+    <meta name="description" content="devshell" />
+    <meta name="keywords" content="Shelley Macedo, Shelley Rodrigues de Macedo, shelley macedo, shelley rodrigues de macedo, shelley, frontend, front-end, front, webdesign, web design, dev, shell, devshell, macedo, desenvolvimento, site" />
+    <link rel="shortcut icon" href="media/images/logo.png" />
+    <title>DEV Shell</title>
+
+    <!-- CSS  -->
+    <link href="media/css/lib/reset.css" rel="stylesheet">
+    <link href="media/css/lib/plugins.css" type="text/css" rel="stylesheet" />
+    <link href="media/css/style.min.css" type="text/css" rel="stylesheet" />
+    <link href="media/css/lib/mqs.css" type="text/css" rel="stylesheet" />
+
+  </head>
+
+  <body id="wrapper">
+    <header>
+      <div class="barra-topo">
+        
+        <!-- POPUP PORTFÓLIO -->
+        <div id="sm-portfolio">
+          <div class="container">
+            <div class="conteudo-interno scroll"></div>
+          </div>
+          <span class="close"><a href="#"></a></span>
+        </div>
+
+        <!-- LOADING -->
+        <div class="spinner">
+          <span class="loading">
+            <div class="ico-loading"></div>
+          </span>
+        </div>
+      </div>
+
+      <!-- MENU FIXO -->
+      <div class="menu-fixo">
+        <div class="fixo-interno">
+          <div class="fixo-conteudo">
+            <span class="logo"></span>
+            <div class="redes-laterais">
+              <ul>
+                <li><a href="https://www.facebook.com/shelley.macedo" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="https://br.linkedin.com/in/shelleymacedo" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+              <li><a href="https://www.instagram.com/shelley.macedo/?hl=pt-br" target="_blank"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="https://gitlab.com/shelleymacedo" target="_blank"><i class="fab fa-gitlab"></i></a></li>
+              <li><a href="mailto:atendimento@devshell.com.br" target="_blank"><i class="far fa-envelope"></i></a></li>
+              </ul>
+            </div>
+            <div class="navbar-toggle inexicity" data-toggle="collapse">
+              <button type="button" class="hamburger is-open" data-toggle="offcanvas" data-target=".navbar-collapse">
+                <span class="sr-only">Menu</span>
+                <span class="hamb-top"></span>
+                <span class="hamb-middle"></span>
+                <span class="hamb-bottom"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="navbar-wrapper" role="navigation" id="page-content-wrapper">
+          <!-- Sidebar -->
+          <nav class="navbar" id="sidebar-wrapper" role="navigation">
+            <!-- LOGO -->
+            <div class="sidebar-brand">
+              <a href="#" class="logo">
+                <h1>DEV Shell Desenvolvimento</h1>
+              </a>
+            </div>
+
+            <ul class="nav nav-principal sidebar-nav">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#servicos">Serviços</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#extras">Extras</a></li>
+              <li><a href="#contato">Contato</a></li>
+            </ul>
+
+            <ul class="redes-sociais">
+              <li><a href="https://www.facebook.com/shelley.macedo" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="https://br.linkedin.com/in/shelleymacedo" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+              <li><a href="https://www.instagram.com/shelley.macedo/?hl=pt-br" target="_blank"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="https://gitlab.com/shelleymacedo" target="_blank"><i class="fab fa-gitlab"></i></a></li>
+              <li><a href="mailto:atendimento@devshell.com.br" target="_blank"><i class="far fa-envelope"></i></a></li>
+            </ul>
+          </nav>
+          <!-- /Sidebar -->
+        </div>
+      </div>
+    </header>
+
+    <main class="main" id="miolo">
+
+      <!-- BANNER -->
+      <section id="home" class="p-0">
+        <div id="banner" class="carousel slide banner-principal particle parallax" data-speed="9.0" data-type="background" data-ride="carousel" style="background-image:url(media/images/banners/capa.jpg);">
+          <div class="carousel-inner">
+            <div id="particulas" ></div>
+            <div id="container"></div>
+            <div class="item active">
+              <div class="container">
+                <div class="imagem-principal" data-aos="zoom-in" data-aos-delay="1100" data-aos-duration="1000">
+                  <img src="media/images/galeria/dev.jpg" alt="Shelley Macedo - DEV Shell Desenvolvimento" />
+                </div>
+                <div class="titulo" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
+                  <h2><b><</b> DEV SHELL <b>/></b></h2>
+                </div>
+                <div class="texto-animado">
+                  <p>Eu sou <span class="palavra typewrite" data-period="2000" data-type='[ "a Shelley Macedo.", "Desenvolvedora Front-End.", "apaixonada por CSS.", "Web Designer.", "apaixonada por UI e UX.", "a busca por novos desafios.", "a busca por oportunidades.", "a busca por possibilidades.", "a arte transformada em tags!" ]'><span class="wrap"></span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#sobre" class="ancora bounce active"><i class="fas fa-angle-double-down"></i></a>
+        </div>
+      </section>
+
+
+      <!-- SOBRE MIM -->
+      <section id="sobre">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+              <div class="titulo-destaque">
+                <h3>Quem sou</h3>
+                <span>Já ouviu falar de mim ?</span>
+              </div>
+            </div>        
+          </div>
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-5 col-sm-12">
+              <div class="figura-destaque">
+                <figure class="foto-imagem efeito">
+                  <img src="media/images/galeria/3.jpg" height="" width="340" alt="Shelley Macedo - DEV Shell Desenvolvimento Front" />
+                </figure>
+                <div class="foto-mascara efeito"></div>
+                <div class="foto-descricao efeito">
+                  <span class="foto-texto site">Aqui é o Dev Shell</span>
+                  <h2 class="foto-titulo">Bem-Vind@ !</h2>
+                  <address class="foto-texto autor">Eu sou a Shelley Macedo</address>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-8 col-lg-8 col-md-7 col-sm-12">
+              <div class="texto-animado">
+                <h4>Eu sou <span class="palavra typewrite" data-period="2000" data-type='[ "a Shelley Macedo.", "Desenvolvedora Front-End.", "apaixonada por CSS.", "Web Designer.", "apaixonada por UI e UX.", "a busca por novos desafios.", "a busca por oportunidades.", "a busca por possibilidades." ]'><span class="wrap"></span></h4>
+              </div>
+              <div class="definicao">
+                <p>Olá! Me chamo <strong>Shelley Macedo</strong>, e sou a criadora deste site. Uma <b>Desenvolvedora Front-End</b>. Aprecio cada passo da criação de websites, desde a discussão (briefing) até o conceito e execução destes. Sou apaixonada por cores, movimentos, diagramação e tudo o que essa tríade pode fazer neste <u>maravilhoso universo paralelo</u> chamado <b>internet</b>. E sem dúvidas, pensando no alcance mundial desta rede, a maior satisfação está em ver em funcionamento minhas <b>linhas de código</b> que, com certeza, se transformarão em seu cartão de visitas.</p>
+              </div>
+              <ul class="dados-basicos texto-col2">
+                <li><span><label>Área Atual:</label> Desenvolvimento Front-End</span></li>
+                <li><span><label>Atuação:</label> Diagramação/Desenvolvimento</span></li>
+                <li><span><label>Experiência:</label> no mercado desde 2008</span></li>
+                <li><span><label>Interesses:</label> Front-End e Design Web no Geral</span></li>
+                <li><span><label>Formação:</label> Universidade Braz Cubas</span></li>
+                <li><span><label>Formação Acadêmica:</label> Superior de Tecnologia em Web Design</span></li>
+                <li><span><label>Formação Acadêmica:</label> Superior de Tecnologia em Informática</span></li>
+                <li><span><label>Site Pessoal:</label> <a href="#!">www.devshell.com.br</a></span></li>
+                <li><span><label>Contato Direto:</label> <a href="mailto:atendimento@devshell.com.br">atendimento@devshell.com.br</a><br/><a href="mailto:shelley.macedo@hotmail.com">shelley.macedo@hotmail.com</a></span></li>
+                <li><span><label>Redes Sociais:</label><a href="#">@shelley.macedo</a></span></li>
+              </ul>
+              <div class="botoes-contato">
+                <a href="mailto:atendimento@devshell.com.br?subject=Oi Shelley, gostaria de saber mais sobre seus trabalhos!&body=Me encaminhe seu curriculo completo!&bcc=shelley.macedo@hotmail.com" class="btn-padrao"><span>Solicitar CV</span></a>
+                <a href="#contato" class="btn-padrao ancora"><span>Enviar Mensagem</span></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- HABILIDADES -->
+      <section id="habilidades" class="pb-0">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+              <div class="titulo-secundario">
+                <h4>Minhas Referências</h4>
+                <p>Desde 2008 nesta área, começando como programadora PHP e, hoje, com foco total ao Desenvolvimento Front-End, faço o possível para experimentar e aprender todos os dias. Nesta jornada, com bons anos de experiência, ciente do quanto aprendemos a cada projeto e equilibrando meu tempo na medida do possível para manter esta linha de raciocínio, já adquiri conhecimentos necessários para ajudar a tornar seu projeto e minhas habilidades mais um <b>case de sucesso</b>.</p>
+              </div>
+            </div>             
+            <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
+              <span class="barra-animada">
+                <label for="meter">CMS / Sistemas<span class="experiencia">- manutenção, implementação e conteúdo</span><i></i></label>
+                <span class="barra-fundo">
+                  <span class="barra" data-value="70"></span>
+                </span>
+              </span>         
+
+              <span class="barra-animada">
+                <label for="meter">Criação - <span class="experiencia">vetorização, tratamento e criação</span><i></i></label>
+                <span class="barra-fundo">
+                  <span class="barra" data-value="50"></span>
+                </span>
+              </span>
+
+              <span class="barra-animada">
+                <label for="meter">Front-End - <span class="experiencia">adaptação, diagramação e desenvolvimento</span><i></i></label>
+                <span class="barra-fundo">
+                  <span class="barra" data-value="80"></span>
+                </span>
+              </span>
+
+              <span class="barra-animada">
+                <label for="meter">Outras linguagens - <span class="experiencia">manutenção e adaptações de componentes</span><i></i></label>
+                <span class="barra-fundo">
+                  <span class="barra" data-value="60"></span>
+                </span>
+              </span>
+
+              <span class="barra-animada">
+                <label for="meter">Aprendizado - <span class="experiencia">a meta é aprender todos os dias!</span><i></i></label>
+                <span class="barra-fundo">
+                  <span class="barra" data-value="98"></span>
+                </span>
+              </span>
+
+              <span class="barra-animada">
+                <label for="meter">Hobbies - <span class="experiencia">aquele tempinho tentando algo novo para aperfeiçoar meus conhecimentos</span><i></i></label>
+                <span class="barra-fundo">
+                  <span class="barra" data-value="40"></span>
+                </span>
+              </span>
+
+            </div>        
+          </div>
+        </div>
+      </section>
+
+
+      <!-- SERVIÇOS -->
+      <section id="servicos">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+              <div class="titulo-destaque">
+                <h3>Serviços</h3>
+                <span>Mas afinal, o que faz um desenvolvedor front-end?</span>
+              </div>
+            </div>        
+          </div>
+          <div class="iguala-blocos">  
+
+              <div class="bloco aos-item" aos="fade-up">
+                <img src="./media/images/icones/settings.svg" alt="Adaptação" />
+                <h5>Adaptação</h5>
+                <p>Há projetos que não possuem versão adaptável em dispositivos móveis, estão desatualizados ou precisam de alguns retoques para acompanhar este mercado gigantesco. <b>(Ver seu site acompanhando novidades se torna bem gratificante!)</b> ^_^</p>
+              </div> 
+
+              <div class="bloco clearfix">
+                <img src="./media/images/icones/programming.svg" alt="Criação" />
+                <h5>Criação</h5>
+                <p>Algumas demandas exigem que o projeto comece do zero, então às vezes assumo essa parte de <b>web designer</b>.<b>(faço por hobby)</b> *-*</p>
+              </div> 
+                     
+              <div class="bloco clearfix">
+                <img src="./media/images/icones/password.svg" alt="Diagramação" />
+                <h5>Diagramação</h5>
+                <p>Transformar layouts estáticos em funcionalidades, cores e movimento. <b>(Esta é a parte do trabalho em que mais me divirto!)</b> ^^</p>
+              </div>   
+  
+              <div class="bloco">
+                <img src="./media/images/icones/malware.svg" alt="Reparos" />
+                <h5>Reparos</h5>
+                <p>Em um mercado que se atualiza todos os dias, nem sempre todas as coisas permanecem 100% no lugar. Às vezes é necessário pequenos ajustes para que tudo continue funcionando. <b>(Aqui caçamos bugs e nos livramos deles!)</b> U_U</p>
+              </div>
+         
+              <div class="bloco clearfix">
+                <img src="./media/images/icones/code.svg" alt="Desenvolvimento" />
+                <h5>Desenvolvimento</h5>
+                <p>Meu trabalho é, principalmente, transformar sua idéia visual em um cartão de visitas codificado para o mundo (e cá entre nós?) <b>Eu amo isto aqui!</b> ;) </p>
+              </div>      
+
+              <div class="bloco">
+                <img src="./media/images/icones/internet.svg" alt="Manutenção" />
+                <h5>Manutenção</h5>
+                <p>Alguns projetos, já publicados, precisam periodicamente de alguns retoques. A internet não descansa, logo seu site também não pode parar! <b>(Algumas mágicas acontecem aqui)</b> T_T</p>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PORTFÓLIO -->
+      <section id="portfolio">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+              <div class="titulo-destaque">
+                <h3>Portfólio</h3>
+                <span>Conheça alguns dos projetos em que já participei até aqui</span>
+              </div>
+            </div>        
+          </div>          
+          <div class="row gallery">
+            <ul class="projetosFilter clearfix">
+              <li class="drop-nav current"><a data-filter="*">Todos</a></li>
+              <li class="drop-nav"><a data-filter=".criacao">Criação</a></li>
+              <li class="drop-nav"><a data-filter=".html">Front</a></li>
+              <li class="drop-nav"><a data-filter=".wordpress">Wordpress</a></li>
+              <li class="drop-nav"><a data-filter=".ecommerce">E-commerce</a></li>
+              <li class="drop-nav"><a data-filter=".exterior">Internacional</a></li>
+              <li class="drop-nav"><a data-filter=".manutencao">Manutenção</a></li>
+            </ul>
+
+            <div class="projetosContainer w-100 da-thumbs" id="da-thumbs">  
+
+              <div class="criacao">   
+                <a href="media/images/portfolio/devshell_logo.jpg" data-toggle="lightbox" title="DEV Shell"  data-gallery="portfolio">
+                  <img src="media/images/portfolio/devshell_logo.jpg" alt="DEV Shell"/>
+                  <div><span>DEV Shell<br/><small>criação de logotipo</small></span></div>
+                </a>
+              </div>
+
+              <!-- <div class="criacao">   
+                <a href="media/images/portfolio/eusouotalvez_livro.jpg" data-toggle="lightbox" title="Eu Sou o Talvez" data-gallery="portfolio">
+                  <img src="media/images/portfolio/eusouotalvez_livro.jpg"  alt="Eu Sou o Talvez"/>
+                  <div><span>Livro Eu Sou O Talvez<br/><small>criação de capa - impresso</small></span></div>
+                </a>
+              </div> -->     
+              
+              <div class="criacao html manutencao">   
+                <a href="media/images/portfolio/devshell.jpg" data-toggle="lightbox" title="DEV Shell" data-gallery="portfolio">
+                  <img src="media/images/portfolio/devshell.jpg"  alt="DEV Shell"/>
+                  <div><span>DEV Shell<br/><small>criação de layout e website</small></span></div>
+                </a>
+              </div>
+
+              <!-- <div class="criacao">   
+                <a href="media/images/portfolio/eusouotalvez.jpg" data-toggle="lightbox" title="Eu Sou o Talvez" data-gallery="portfolio">
+                  <img src="media/images/portfolio/eusouotalvez.jpg"  alt="Eu Sou o Talvez"/>
+                  <div><span>Eu Sou O Talvez<br/><small>criação de layout</small></span></div>
+                </a>
+              </div> -->
+              
+              <div class="manutencao">   
+                <a href="media/images/portfolio/bombarco.jpg" data-toggle="lightbox" title="Bombarco" data-gallery="portfolio">
+                  <img src="media/images/portfolio/bombarco.jpg"  alt="Bombarco"/>
+                  <div><span>Bombarco<br/><small>manutenção e reparos</small></span></div>
+                </a>
+              </div>
+
+              <div class="html">
+                <a href="media/images/portfolio/lords.jpg" data-toggle="lightbox" title="Lord's Diversões" data-gallery="portfolio">
+                  <img src="media/images/portfolio/lords.jpg" alt="Lord's Diversões" />
+                  <div><span>Lord's Diversões<br/><small>diagramação</small></span></div>
+                </a>
+              </div>
+
+              <div class="html manutencao">
+                <a href="media/images/portfolio/zeromilhas.jpg" data-toggle="lightbox" title="Zeromilhas" data-gallery="portfolio">
+                  <img src="media/images/portfolio/zeromilhas.jpg" alt="Zeromilhas"/>
+                  <div><span>Zeromilhas<br/><small>diagramação e manutenção</small></span></div>
+                </a>
+              </div>
+
+              <div class="html">
+                <a href="media/images/portfolio/boutiquedental.jpg" data-toggle="lightbox" title="Boutique Dental" data-gallery="portfolio">
+                  <img src="media/images/portfolio/boutiquedental.jpg" alt="Boutique Dental"/>
+                  <div><span>Boutique Dental<br/><small>diagramação</small></span></div>
+                </a>
+              </div>
+
+              <div class="ecommerce manutencao">
+                <a href="media/images/portfolio/mundohomem.jpg" data-toggle="lightbox" title="Mundo Homem" data-gallery="portfolio">
+                  <img src="media/images/portfolio/mundohomem.jpg" alt="Mundo Homem"/>
+                  <div><span>Mundo Homem<br/><small>e-commerce, manutenção</small></span></div>
+                </a>
+              </div>
+
+              <div class="html">
+                <a href="media/images/portfolio/olimpia.jpg" data-toggle="lightbox" title="Academia Olímpia" data-gallery="portfolio">
+                  <img src="media/images/portfolio/olimpia.jpg" alt="Academia Olímpia" />
+                  <div><span>Academia Olímpia<br/><small>diagramação</small></span></div>
+                </a>
+              </div>
+
+              <div class="html exterior manutencao">
+                <a href="media/images/portfolio/roomeo.jpg" data-toggle="lightbox" title="Rommeo Home Sharing" data-gallery="portfolio">
+                  <img src="media/images/portfolio/roomeo.jpg" alt="Roomeo Home Sharing"/>
+                  <div><span>Roomeo Home Sharing<br/><small>diagramação, internacional</small></span></div>
+                </a>
+              </div>
+
+              <div class="html exterior criacao">
+                <a href="media/images/portfolio/scoringXXI.jpg" data-toggle="lightbox" title="Scoring XXI - Rede Dinâmica" data-gallery="portfolio">
+                  <img src="media/images/portfolio/scoringXXI.jpg" alt="Scoring XXI - Rede Dinâmica"/>
+                  <div><span>Scoring XXI<br/><small>criação e diagramação, <br/>internacional</small></span></div>
+                </a>
+              </div>
+
+              <div class="html criacao">
+                <a href="media/images/portfolio/sarraf.jpg" data-toggle="lightbox" title="Thiago Sarraf - Dr. E-commerce" data-gallery="portfolio">
+                  <img src="media/images/portfolio/sarraf.jpg" alt="Thiago Sarraf - Dr. E-commerce" />
+                  <div><span>Thiago Sarraf<br/><small>criação e diagramação</small></span></div>
+                </a>
+              </div>
+
+              <div class="html wordpress">
+                <a href="media/images/portfolio/toquedecura.jpg"  data-toggle="lightbox" title="Thiago Sarraf - Dr. E-commerce" data-gallery="portfolio">
+                  <img src="media/images/portfolio/toquedecura.jpg" alt="Instituto Toque de Cura" />
+                  <div><span>Toque de Cura<br/><small>diagramação, wordpress</small></span></div>
+                </a>
+              </div>
+
+              <div class="html ecommerce manutencao">
+                <a href="media/images/portfolio/uninjet.jpg" data-toggle="lightbox" title="Uninjet" data-gallery="portfolio">
+                  <img src="media/images/portfolio/uninjet.jpg"  alt="Instituto Toque de Cura" />
+                  <div><span>Uninjet<br/><small>diagramação e manutenção, e-commerce</small></span></div>
+                </a>
+              </div>            
+
+              <div class="html">
+                <a href="media/images/portfolio/furlan.jpg" data-toggle="lightbox" title="Academia Furlan" data-gallery="portfolio">
+                  <img src="media/images/portfolio/furlan.jpg" alt="Academia Furlan" />
+                  <div><span>Academia Furlan<br/><small>diagramação</small></span></div>
+                </a>
+              </div>
+
+              <div class="html ecommerce manutencao">
+                <a href="media/images/portfolio/surfalive.jpg" data-toggle="lightbox" title="Surf Alive" data-gallery="portfolio">
+                  <img src="media/images/portfolio/surfalive.jpg"  alt="Surf Alive" />
+                  <div><span>Surf Alive<br/><small>diagramação e manutenção, e-commerce</small></span></div>
+                </a>
+              </div>
+
+              <div class="html wordpress">
+                <a href="media/images/portfolio/acao.jpg" data-toggle="lightbox" title="Ação Academia" data-gallery="portfolio">
+                  <img src="media/images/portfolio/acao.jpg"  alt="Ação Academia" />
+                  <div><span>Ação Academia<br/><small>diagramação, wordpress</small></span></div>
+                </a>
+              </div>
+
+              <div class="html">
+                <a href="media/images/portfolio/alicechocolates.jpg" data-toggle="lightbox" title="Alice Chocolates" data-gallery="portfolio">
+                  <img src="media/images/portfolio/alicechocolates.jpg" alt="Alice Chocolates" />
+                  <div><span>Alice Chocolates<br/><small>diagramação</small></span></div>
+                </a>
+              </div>
+ 
+              <div class="html mnutencao">
+                <a href="media/images/portfolio/administrandoalimpeza.jpg" data-toggle="lightbox" title="Administrando a Limpeza" data-gallery="portfolio">
+                  <img src="media/images/portfolio/administrandoalimpeza.jpg"  alt="Administrando a Limpeza" />
+                  <div><span>Administrando a Limpeza<br/><small>diagramação, manutenção</small></span></div>
+                </a>
+              </div>
+
+              <div class="html wordpress manutencao">
+                <a href="media/images/portfolio/movimentociranda.jpg" data-toggle="lightbox" title="Movimento Ciranda do Ser" data-gallery="portfolio"> 
+                  <img src="media/images/portfolio/movimentociranda.jpg"  alt="Instituto Toque de Cura" />
+                  <div><span>Movimento Ciranda do Ser<br/><small>diagramação, wordpress, manutenção</small></span></div>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Parallax - Contador -->
+      <section id="contador" class="depoimento parallax v-center" data-speed="1.1" data-type="background" style="background-image: url(media/images/banners/mockup.jpg);">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-9 col-md-9 col-sm-10 offset-lg-1 offset-md-1 offset-sm-1">
+              <span class="dados-depoimentos">
+                <i class="fas fa-quote-left"></i>
+                <cite>
+                  <b>Trabalhe com o que você ama e nunca mais precisará trabalhar na vida</b>
+                  <small>- Confúcio</small>
+                </cite>
+                <i class="fas fa-quote-right q-right"></i>
+              </span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+              <div class="contador">
+                <span class="dados">
+                  <b class="num">+ 300</b>
+                  Projetos Completos
+                </span>
+                <span class="dados">
+                  <b class="num">+100000</b>
+                  Horas Trabalhadas
+                </span>
+                <span class="dados">
+                  <b class="num">>100</b>
+                  Freelances
+                </span>
+                <span class="dados">
+                  <b class="num">>900k</b>
+                  Linhas de código
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- EXTRAS -->
+      <section id="extras" class="bg-cinza">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+              <div class="titulo-destaque">
+                <h3>Extras</h3>
+                <span>Um pouquinho dos meus hobbies e do que sai nas horas vagas</span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+              <div class="owl-carousel owl-extras">
+                
+                <div class="extra-item">
+                  <div class="extra-imagem">
+                    <a href="media/images/hobbies/logotipos.jpg" data-toggle="lightbox" data-gallery="hobbies">
+                      <img class="img-fluid" src="media/images/hobbies/logotipos.jpg" alt="Hobby: Logotipos" />
+                    </a>
+                  </div>
+                  <div class="extra-definicoes">
+                    <div class="extra-data">
+                      criação
+                    </div>
+                    <div class="extra-titulo">
+                      <h3>Idéias de Logotipos</h3>
+                    </div>
+                    <div class="extra-descricao">
+                      <!--<p>A criação de logotipos sempre parte de desenhos, então acho bacana trazer o meu como exemplo para expôr fases da criação.</p>-->
+                    </div>
+                  </div>
+                </div>                
+
+                <div class="extra-item">
+                  <div class="extra-imagem">
+                    <a href="media/images/hobbies/desenhos.jpg" data-toggle="lightbox" data-gallery="hobbies">
+                      <img class="img-fluid" src="media/images/hobbies/desenhos.jpg" alt="Hobby: Desenhos" />
+                    </a>
+                  </div>
+                  <div class="extra-definicoes">
+                    <div class="extra-data">
+                      hobbies
+                    </div>
+                    <div class="extra-titulo">
+                      <h3>Desenhos</h3>
+                    </div>
+                    <div class="extra-descricao">
+                      <!--<p>Este considero um hobby fantástico, nada muito ligado ao desenvolvimento web, mas tudo começa por aqui.</p>-->
+                    </div>
+                  </div>
+                </div>
+
+                <!--<div class="extra-item">
+                  <div class="extra-imagem">
+                    <a href="media/images/hobbies/escritas.jpg" data-toggle="lightbox" data-gallery="hobbies">
+                      <img class="img-fluid" src="media/images/hobbies/escritas.jpg" alt="Hobby: Escritas" />
+                    </a>
+                  </div>
+                  <div class="extra-definicoes">
+                    <div class="extra-data">
+                      sempre que sobra um tempinho...
+                    </div>
+                    <div class="extra-titulo">
+                      <h3>Escrita</h3>
+                    </div>
+                    <div class="extra-descricao">
+                      <p>Na escrita ficamos livres para podermos trocar informações sobre diversos temas que gostamos e/ou achamos interessantes, e quando posso, adoro passar um tempinho assim.</p>
+                    </div>
+                  </div>
+                </div>-->
+
+<div class="extra-item">
+                  <div class="extra-imagem">
+                    <a href="media/images/hobbies/jub00.jpg" data-toggle="lightbox" data-gallery="hobbies">
+                      <img class="img-fluid" src="media/images/hobbies/jub00.jpg" alt="Hobby: Vetorização" />
+                    </a>
+                  </div>
+                  <div class="extra-definicoes">
+                    <div class="extra-data">
+                      arte digital
+                    </div>
+                    <div class="extra-titulo">
+                      <h3>Sketches</h3>
+                    </div>
+                    <div class="extra-descricao">
+                      <!--<p>Nos momentos em que quero experimentar novas coisas ou habilidades e saem alguns desenhos fora do papel.</p>-->
+                    </div>
+                  </div>
+                </div>
+
+                <div class="extra-item">
+                  <div class="extra-imagem">
+                    <a href="media/images/hobbies/jub01.jpg" data-toggle="lightbox" data-gallery="hobbies">
+                      <img class="img-fluid" src="media/images/hobbies/jub01.jpg" alt="Hobby: Vetorização" />
+                    </a>
+                  </div>
+                  <div class="extra-definicoes">
+                    <div class="extra-data">
+                      arte digital
+                    </div>
+                    <div class="extra-titulo">
+                      <h3>Drawings</h3>
+                    </div>
+                    <div class="extra-descricao">
+                      <!-- <p>Aqui, utilizei o mesmo sketch anterior com técnicas de pintura.</p> -->
+                    </div>
+                  </div>
+                </div>
+
+                <div class="extra-item">
+                  <div class="extra-imagem">
+                    <a href="media/images/hobbies/vetorizacao.jpg" data-toggle="lightbox" data-gallery="hobbies">
+                      <img class="img-fluid" src="media/images/hobbies/vetorizacao.jpg" alt="Hobby: Vetorização" />
+                    </a>
+                  </div>
+                  <div class="extra-definicoes">
+                    <div class="extra-data">
+                      corel draw
+                    </div>
+                    <div class="extra-titulo">
+                      <h3>Vetorização</h3>
+                    </div>
+                    <div class="extra-descricao">
+                      <!-- <p>Neste, por exemplo, utilizei Corel Draw, há alguns anos atrás.</p> -->
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FALE CONOSCO -->
+      <section id="contato">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+              <div class="titulo-destaque">
+                <h3>CONTATE-ME</h3>
+                <span>Se interessou por meu trabalho ou quer me deixar uma mensagem?</span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-5 col-sm-12">
+              <ul class="dados-contato">
+                <b>Envie contato direto:</b>
+                <li><strong>Localização Atual: </strong><a href="#" target="_blank">Estou em São Paulo</a></li>
+                <li><strong>E-mail: </strong><a href="mailto:">atendimento@devshell.com.br</a></li> 
+                <li><strong>Outlook: </strong><a href="mailto:">shelley.macedo@hotmail.com</a></li>
+                <li class="d-none"><strong>Whatsapp: </strong><a href="tel:">(11) 98307-7211</a></li></li>
+                <li class="d-none"><i class="fas fa-infinity hidden"></i><strong>Website: </strong><a href="#">www.devshell.com.br</a></li></li>
+              </ul>
+            </div>
+            <div class="col-lg-8 col-md-7 col-sm-12">
+              <form id="frmContato" class="row form d-none">
+                <div class="row col-sm-12 w-100">
+
+                  <div class="label-float w-100">
+                    <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                    <label for="nome">Nome</label>
+                  </div>
+
+                  <div class="label-float w-50">
+                    <input type="tel" class="telefone" id="telefone" placeholder="Telefone" name="telefone" required>
+                    <label for="nome">Telefone</label>
+                  </div>
+
+                  <div class="label-float w-50">
+                    <input type="email" id="email" name="email" placeholder="E-mail" required>
+                    <label for="email">E-mail</label>
+                  </div>
+
+                  <div class="label-float w-100">
+                    <textarea id="mensagem" name="mensagem" placeholder="Mensagem" rows="8" required></textarea>
+                    <label for="mensagem">Escreva aqui sua mensagem</label>
+                  </div>
+
+                  <!-- Alerts -->
+                  <div class="input-group" style="max-width:98%;">
+                    <div class="alert alert-success alert-dismissible fade show" role="alert" id="msgSucessoContato">
+                      <strong>Mensagem enviada com sucesso!</strong> Aguarde. Em breve retorno seu contato! =)
+                      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                      </button>
+                    </div>
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert" id="msgErroContato">
+                      <strong>Sua mensagem não pôde ser enviada!</strong> Por favor, verifique se todos os campos foram preenchidou ou tente novamente.
+                      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                      </button>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="form-group col-lg-12 col-sm-12">
+                  <button class="btn-padrao right" id="btnEnviarContato" type="submit" style="border-radius:6px;border:0;" ><span>Enviar mensagem</span></a>
+                </div>
+              </form>
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer v-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <span class="copy">2019 &copy; DEVSHELL</span>
+            </div>                
+            <div class="col-lg-5 col-md-5 col-sm-12">
+              <span class="by"><i class="fas fa-mug-hot"></i> + <i class="fas fa-grin-hearts"></i> = <!--<i class="fas fa-laptop-code"></i>--><img src="media/images/logo_negativo.png" width="24" alt="Feito com ♡ por Shelley Macedo"/></span>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <a class="btn-padrao to-top"><span><i class="fas fa-angle-up"></i></span></a> 
+
+      <a href="https://api.whatsapp.com/send?phone=5511983077211&text=Oi,%20Shelley!%20Gostaria%20de%20mais%20detalhes%20sobre%20o%20seu%20trabalho!" class="float" target="_blank">
+        <i class="fab fa-whatsapp my-float"></i>
+      </a>
+
+    </main>
+  
+    <!-- JS -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="media/js/lib/jquery.min.js"></script>
+    <script src="media/js/lib/plugins.js"></script>
+    <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="media/js/scripts.js"></script>
+
+  </body>
+</html>
