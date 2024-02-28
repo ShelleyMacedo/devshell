@@ -60,8 +60,8 @@
   .hamburger.is-open .hamb-top { top: 11px; }
   .hamburger.is-open .hamb-middle { top: 23px; }
   .menu-fixo .logo { width: 70px; height: 50px; line-height: 50px; background-size: contain; }
-  .menu-fixo .redes-laterais { top: 0; left: calc(50% - 80px); width: 180px; height: 50px; transform: translate(0%, 0%); }
-  .menu-fixo .redes-laterais ul li { transform: rotate(0deg); width: 20%; float: left; }
+  .menu-fixo .redes-laterais { top: 0; left: calc(50% - 100px); width: 225px; height: 50px; transform: translate(0%, 0%); }
+  .menu-fixo .redes-laterais ul li { transform: rotate(0deg); width: 16%; float: left; }
   .hamburger.is-open .hamb-bottom { top: 35px; }
   .hamburger.is-closed .hamb-top, .hamburger.is-closed .hamb-middle, .hamburger.is-closed .hamb-bottom { left: 10px; width: 40px; }
   .hamburger.is-closed .hamb-top { top: 20px; }
